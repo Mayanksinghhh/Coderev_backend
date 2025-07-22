@@ -12,7 +12,7 @@ const reviewRoutes = require('./routes/review.routes');
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite default port
+  origin: ['http://localhost:5173','https://coderev-frontend.vercel.app'] // Vite default port
   credentials: true
 }));
 
