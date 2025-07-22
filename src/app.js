@@ -19,7 +19,7 @@ app.use(cors({
 
 app.use(express.json())
 
-const mongoUrl = process.env.MONGO_URL || 'mongodb+srv://mayankkr0077:Mayank01@cluster0.rxvdshf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoUrl = process.env.MONGO_URL
 
 mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
