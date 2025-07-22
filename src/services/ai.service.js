@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI("AIzaSyBMQMoV3e_mHs_2qDb5b2rOURQl1pmdUjM");
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_KEY);
 const model = genAI.getGenerativeModel({
     model: "gemini-2.0-flash",
     systemInstruction: `
